@@ -1,0 +1,407 @@
+/* ==========================================
+   KHATA.CSS
+   DARK EMERALD ERP THEME
+   PART - 1
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0a1f18,#112a22);
+    color:#e8f5e9;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.khata-container{
+    min-height:100vh;
+    padding:30px;
+    background:linear-gradient(135deg,#0a1f18,#112a22);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.khata-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+.khata-header h1{
+    color:#34d399;
+    font-size:34px;
+    font-weight:700;
+}
+
+/* ==========================================
+   SEARCH BOX
+========================================== */
+
+.search-box{
+    width:100%;
+    margin-bottom:25px;
+    padding:14px;
+    background:#10251e;
+    border:1px solid #234e40;
+    border-radius:10px;
+    color:#e8f5e9;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.search-box::placeholder{
+    color:#9ca3af;
+}
+
+.search-box:focus{
+    border-color:#10b981;
+    box-shadow:0 0 10px rgba(16,185,129,.45);
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.khata-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#18382e;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+.khata-table thead{
+    background:#14532d;
+}
+
+.khata-table th{
+    color:#fff;
+    padding:16px;
+    text-align:left;
+    font-size:15px;
+}
+
+.khata-table td{
+    padding:15px;
+    color:#d1fae5;
+    border-bottom:1px solid #234e40;
+}
+
+.khata-table tbody tr{
+    transition:.3s;
+}
+
+.khata-table tbody tr:hover{
+    background:#1d4638;
+}
+
+/* ==========================================
+   BALANCE STATUS
+========================================== */
+
+.paid{
+    color:#10b981;
+    font-weight:700;
+}
+
+.balance{
+    color:#dc2626;
+    font-weight:700;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.collect-btn{
+    background:#10b981;
+    color:#08130f;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.collect-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 15px rgba(16,185,129,.45);
+}
+
+.collect-btn:active{
+    transform:scale(.97);
+}
+
+.delete-btn{
+    background:#dc2626;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 15px rgba(220,38,38,.45);
+}
+
+.delete-btn:active{
+    transform:scale(.97);
+}
+
+/* ==========================================
+   BUTTON ALIGNMENT
+========================================== */
+
+.khata-table td:nth-child(6),
+.khata-table td:nth-child(7){
+    text-align:center;
+}
+
+.khata-table td:nth-child(6) button,
+.khata-table td:nth-child(7) button{
+    min-width:100px;
+}
+
+/* ==========================================
+   CARD EFFECT
+========================================== */
+
+.khata-table:hover{
+    border:1px solid #10b981;
+    box-shadow:0 0 18px rgba(16,185,129,.25);
+}
+/* ==========================================
+   KHATA.CSS
+   DARK EMERALD ERP THEME
+   PART - 2
+========================================== */
+
+/* ==========================================
+   PAYMENT BOX
+========================================== */
+
+.payment-box{
+    margin-top:35px;
+    background:#18382e;
+    border:1px solid #234e40;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.payment-box:hover{
+    border-color:#10b981;
+    box-shadow:0 0 18px rgba(16,185,129,.30);
+}
+
+.payment-box h2{
+    color:#34d399;
+    font-size:26px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+/* ==========================================
+   PAYMENT INPUT
+========================================== */
+
+.payment-input{
+    width:100%;
+    background:#10251e;
+    color:#e8f5e9;
+    border:1px solid #234e40;
+    border-radius:10px;
+    padding:15px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.payment-input::placeholder{
+    color:#9ca3af;
+}
+
+.payment-input:focus{
+    border-color:#10b981;
+    box-shadow:0 0 12px rgba(16,185,129,.45);
+}
+
+/* ==========================================
+   BIG COLLECT PAYMENT BUTTON
+========================================== */
+
+.payment-box .collect-btn{
+    background:#10b981;
+    color:#08130f;
+    border:none;
+    width:280px;
+    height:60px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.payment-box .collect-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 18px rgba(16,185,129,.45);
+}
+
+.payment-box .collect-btn:active{
+    transform:scale(.97);
+}
+
+/* ==========================================
+   TABLE HOVER EFFECT
+========================================== */
+
+.khata-table tbody tr:hover td{
+    color:#ffffff;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+    width:8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#10251e;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#10b981;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#34d399;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.khata-table{
+    display:block;
+    overflow-x:auto;
+}
+
+.khata-table table{
+    min-width:800px;
+}
+
+}
+
+@media(max-width:768px){
+
+.khata-container{
+    padding:18px;
+}
+
+.khata-header h1{
+    font-size:28px;
+}
+
+.payment-box{
+    padding:20px;
+}
+
+.payment-box .collect-btn{
+    width:100%;
+}
+
+.collect-btn,
+.delete-btn{
+    width:100%;
+}
+
+.khata-table td:nth-child(6),
+.khata-table td:nth-child(7){
+    display:flex;
+    justify-content:center;
+}
+
+}
+
+@media(max-width:600px){
+
+.search-box{
+    font-size:14px;
+}
+
+.payment-input{
+    font-size:15px;
+}
+
+.payment-box h2{
+    font-size:22px;
+}
+
+}
+
+/* ==========================================
+   PRINT MODE
+========================================== */
+
+@media print{
+
+body{
+    background:#fff;
+    color:#000;
+}
+
+.collect-btn,
+.delete-btn{
+    display:none;
+}
+
+.khata-container,
+.payment-box{
+    background:#fff;
+    border:none;
+    box-shadow:none;
+}
+
+.khata-table th{
+    background:#ddd;
+    color:#000;
+}
+
+.khata-table td{
+    color:#000;
+    border:1px solid #999;
+}
+
+}

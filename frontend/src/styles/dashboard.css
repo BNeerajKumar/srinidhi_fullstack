@@ -1,0 +1,294 @@
+/* ==========================================
+   DASHBOARD.CSS
+   DARK EMERALD ERP THEME
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0a1f18,#112a22);
+    color:#e8f5e9;
+}
+
+/* ===============================
+   DASHBOARD
+================================ */
+
+.dashboard{
+    min-height:100vh;
+    padding:30px;
+    background:linear-gradient(135deg,#0a1f18,#112a22);
+}
+
+/* ===============================
+   PAGE TITLE
+================================ */
+
+.page-title{
+    font-size:34px;
+    font-weight:700;
+    color:#34d399;
+    margin-bottom:30px;
+    letter-spacing:.5px;
+}
+
+/* ===============================
+   CARDS GRID
+================================ */
+
+.cards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    margin-bottom:35px;
+}
+
+/* DashboardCard Component */
+
+.dashboard-card{
+    background:#18382e;
+    border:1px solid #234e40;
+    border-radius:16px;
+    padding:24px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.3s;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+    border-color:#10b981;
+    box-shadow:0 0 18px rgba(16,185,129,.35);
+}
+
+.dashboard-card h3{
+    color:#cbd5d1;
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+.dashboard-card h2{
+    color:#34d399;
+    font-size:30px;
+}
+
+.dashboard-card .icon{
+    font-size:42px;
+}
+
+/* ===============================
+   BOTTOM SECTION
+================================ */
+
+.dashboard-bottom{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:25px;
+    margin-bottom:35px;
+}
+
+/* ===============================
+   TODAY SALES
+================================ */
+
+.sales-card{
+    background:#18382e;
+    border:1px solid #234e40;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.sales-card:hover{
+    border-color:#10b981;
+    box-shadow:0 0 18px rgba(16,185,129,.35);
+}
+
+.sales-card h2{
+    color:#cbd5d1;
+    margin-bottom:18px;
+    font-size:22px;
+}
+
+.sales-card h1{
+    font-size:42px;
+    color:#10b981;
+}
+
+/* ===============================
+   LOW STOCK
+================================ */
+
+.low-stock{
+    background:#18382e;
+    border:1px solid #234e40;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+.low-stock h2{
+    color:#34d399;
+    margin-bottom:20px;
+}
+
+/* ===============================
+   RECENT BILLS
+================================ */
+
+.recent-bills{
+    background:#18382e;
+    border:1px solid #234e40;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+.recent-bills h2{
+    color:#34d399;
+    margin-bottom:20px;
+}
+
+/* ===============================
+   TABLES
+================================ */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#14532d;
+}
+
+thead th{
+    padding:15px;
+    color:#ffffff;
+    font-weight:600;
+    text-align:left;
+}
+
+tbody tr{
+    background:#18382e;
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:#1d4638;
+}
+
+tbody td{
+    padding:15px;
+    color:#d1fae5;
+    border-bottom:1px solid #234e40;
+}
+
+/* ===============================
+   STATUS COLORS
+================================ */
+
+.cash{
+    color:#10b981;
+    font-weight:bold;
+}
+
+.upi{
+    color:#f59e0b;
+    font-weight:bold;
+}
+
+.credit{
+    color:#dc2626;
+    font-weight:bold;
+}
+
+/* ===============================
+   SCROLLBAR
+================================ */
+
+::-webkit-scrollbar{
+    width:8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#10251e;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#10b981;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#34d399;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media(max-width:992px){
+
+.dashboard-bottom{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.dashboard{
+    padding:18px;
+}
+
+.page-title{
+    font-size:28px;
+}
+
+.cards-grid{
+    grid-template-columns:1fr;
+}
+
+.sales-card h1{
+    font-size:34px;
+}
+
+table{
+    min-width:600px;
+}
+
+.low-stock,
+.recent-bills{
+    overflow-x:auto;
+}
+
+}
+.logout-btn{
+    position:absolute;
+    top:25px;
+    right:30px;
+    background:#dc2626;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#b91c1c;
+    transform:translateY(-2px);
+}

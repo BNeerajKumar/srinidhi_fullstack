@@ -1,0 +1,385 @@
+/* ==========================================
+   REPORTS.CSS
+   DARK EMERALD ERP THEME
+   PART - 1
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0a1f18,#112a22);
+    color:#e8f5e9;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.reports-container{
+    min-height:100vh;
+    padding:30px;
+    background:linear-gradient(135deg,#0a1f18,#112a22);
+}
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+
+.reports-container h1{
+    color:#34d399;
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+/* ==========================================
+   REPORT GRID
+========================================== */
+
+.report-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-bottom:35px;
+}
+
+/* ==========================================
+   REPORT CARDS
+========================================== */
+
+.report-card{
+    background:#18382e;
+    border:1px solid #234e40;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.report-card:hover{
+    transform:translateY(-5px);
+    border-color:#10b981;
+    box-shadow:0 0 18px rgba(16,185,129,.35);
+}
+
+.report-card h2{
+    color:#cbd5d1;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.report-card h1{
+    color:#34d399;
+    font-size:34px;
+    font-weight:700;
+    margin:0;
+}
+
+/* ==========================================
+   DIFFERENT CARD ACCENTS
+========================================== */
+
+.report-card:nth-child(1){
+    border-left:6px solid #10b981;
+}
+
+.report-card:nth-child(2){
+    border-left:6px solid #34d399;
+}
+
+.report-card:nth-child(3){
+    border-left:6px solid #f59e0b;
+}
+
+.report-card:nth-child(4){
+    border-left:6px solid #22c55e;
+}
+
+.report-card:nth-child(5){
+    border-left:6px solid #dc2626;
+}
+
+.report-card:nth-child(6){
+    border-left:6px solid #f97316;
+}
+
+/* ==========================================
+   NUMBER ANIMATION
+========================================== */
+
+.report-card h1{
+    transition:.3s;
+}
+
+.report-card:hover h1{
+    transform:scale(1.08);
+}
+
+/* ==========================================
+   LOADING TEXT
+========================================== */
+
+.reports-container h2{
+    color:#34d399;
+}
+/* ==========================================
+   REPORTS.CSS
+   DARK EMERALD ERP THEME
+   PART - 2
+========================================== */
+
+/* ==========================================
+   BUSINESS SUMMARY
+========================================== */
+
+.summary-section{
+    background:#18382e;
+    border:1px solid #234e40;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.summary-section:hover{
+    border-color:#10b981;
+    box-shadow:0 0 18px rgba(16,185,129,.30);
+}
+
+.summary-section h2{
+    color:#34d399;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+/* ==========================================
+   SUMMARY TABLE
+========================================== */
+
+.summary-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.summary-table td{
+    padding:15px;
+    border-bottom:1px solid #234e40;
+    color:#d1fae5;
+    font-size:15px;
+}
+
+.summary-table tr:hover{
+    background:#1d4638;
+}
+
+.summary-table td:first-child{
+    font-weight:600;
+    color:#34d399;
+}
+
+.summary-table td:last-child{
+    text-align:right;
+    font-weight:700;
+}
+
+/* ==========================================
+   QUICK INSIGHTS
+========================================== */
+
+.insights-section{
+    background:#18382e;
+    border:1px solid #234e40;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.insights-section:hover{
+    border-color:#10b981;
+    box-shadow:0 0 18px rgba(16,185,129,.30);
+}
+
+.insights-section h2{
+    color:#34d399;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.insights-section ul{
+    list-style:none;
+}
+
+.insights-section li{
+    padding:14px 0;
+    border-bottom:1px solid #234e40;
+    color:#d1fae5;
+    font-size:16px;
+}
+
+.insights-section li:last-child{
+    border-bottom:none;
+}
+
+.insights-section strong{
+    color:#10b981;
+}
+
+/* ==========================================
+   ACTION BUTTON
+========================================== */
+
+.report-actions{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:25px;
+}
+
+.refresh-btn{
+    background:#10b981;
+    color:#08130f;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.refresh-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 18px rgba(16,185,129,.45);
+}
+
+.refresh-btn:active{
+    transform:scale(.97);
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+    width:8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#10251e;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#10b981;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#34d399;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.report-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.reports-container{
+    padding:18px;
+}
+
+.reports-container h1{
+    font-size:28px;
+}
+
+.report-grid{
+    grid-template-columns:1fr;
+}
+
+.summary-table{
+    display:block;
+    overflow-x:auto;
+}
+
+.report-actions{
+    justify-content:center;
+}
+
+.refresh-btn{
+    width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.summary-table td{
+    font-size:14px;
+    padding:12px;
+}
+
+.insights-section li{
+    font-size:14px;
+}
+
+.refresh-btn{
+    font-size:16px;
+}
+
+}
+
+/* ==========================================
+   PRINT MODE
+========================================== */
+
+@media print{
+
+body{
+    background:#ffffff;
+    color:#000000;
+}
+
+.refresh-btn{
+    display:none;
+}
+
+.reports-container,
+.report-card,
+.summary-section,
+.insights-section{
+    background:#ffffff;
+    border:none;
+    box-shadow:none;
+}
+
+.report-card h1,
+.report-card h2,
+.summary-section h2,
+.insights-section h2{
+    color:#000000;
+}
+
+.summary-table td,
+.insights-section li{
+    color:#000000;
+    border:1px solid #999999;
+}
+
+}
